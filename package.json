@@ -12,7 +12,7 @@
     "test:e2e": "npx playwright test",
     "test:e2e-report": "npx playwright show-report",
     "test:e2e-automatic": "npx playwright codegen http://localhost:3000",
-    "config:husky": "npx husky add .husky/commit-msg 'npx --no -- commitlint --edit $1'",
+    "config:husky": "npx husky install && npx husky add .husky/commit-msg 'npx --no -- commitlint --edit $1'",
     "db:push": "dotenv -e .env.local -- npx prisma db push",
     "prisma:studio": "dotenv -e .env.local -- npx prisma studio",
     "prisma:generate": "dotenv -e .env.local -- npx prisma generate"
